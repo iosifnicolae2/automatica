@@ -1,0 +1,35 @@
+t=0:0.001:0.02
+f=sin(2*pi*t*50)
+plot(t,f,'g-.' );
+g=f+0.2;
+plot(t,f,'r+' );
+x=0:.1:10;
+f=10.^x
+semilogy(x,f)
+t=[0:.01:2*pi];
+f=sin(2.*t).*cos(2.*t)
+polar(f,t);
+polar(t,f);
+n=[0:20];
+f=sin(2*pi*n/10);
+stem(n,f);
+x=[0:.2:10];
+y=sin(x);
+stairs(x,y);
+x=[-5:.1:5];
+u=abs(x);
+f=x.*u./(1+x.^2);
+plot(x,f);
+clear;
+t=[-2:.01:2];
+x=cos(2*pi*t);
+y=sin(2*pi*t);
+contour(y);
+plot3(x,y,t);
+x=[-2:.01:2];
+y=[-2:.01:2];
+[x,y]=meshgrid(x,y);
+z=x^2-y^2;
+subplot(1,2,2);
+contour(z);
+mesh(z)

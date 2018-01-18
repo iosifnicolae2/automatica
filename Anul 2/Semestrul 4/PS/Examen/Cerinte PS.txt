@@ -1,0 +1,41 @@
+Mesajul ar fi:
+
+********************
+
+Aveti suportul de curs pentru PS. Sunt 7 fisiere pdf. Verificati daca aveti aceste fisiere.
+Pentru examen, va pot transmite urmatoarele:
+
+1. Vor fi 5 subiecte, fiecare cu punctajul lui: 
+- unul din 'introducere', privind semnalele (definitiile termenilor, clasificari) - 1 pct
+- unul din 'transformata Fourier' (definitii, proprietati) - 1pct
+- unul din 'efectul polilor si zerourilor asupra caracteristicii modul-pulsatie' - 2pct
+- unul din 'filtrul Butterworth / Cebashev' (fara determinarea pozitiei polilor) - 3pct
+- o problema din ultimul curs, 'transformari de frecventa' - 2pct.
+(Se acopera cam tot cursul.)
+
+2. La ultimul subiect, nu veti primi date numerice.Veti descrie doar metoda, principiul, pasii in 
+rezolvarea problemei primite, fara calcule. 
+
+3. La subiectul al 4-lea - tot ce stiti, fara determinarea polilor.
+
+4. Vor fi subiecte diferite pe randuri.
+
+
+********************************
+
+Salut
+Materialul pentru examen este cuprins in fisierele:
+c1_
+c1_TF
+c2_
+c3_
+c4_
+c5_
+c6_
+Adica doar lucrurile despre care am vorbit la scoala.
+
+De asemenea, vedeti ca unele aspecte le-am prezentat mai bine in cursurile predate si in seminar. 
+Sunt aspecte "subliniate", explicate mai clar, detaliate etc. Asadar, va recomand sa cititi cu ceva 
+atentie si ceea ce am predat la scoala.  
+
+Cristi Boldisor

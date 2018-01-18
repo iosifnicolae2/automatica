@@ -1,0 +1,9 @@
+a=2;
+w=2*pi*f;
+t = 0:0.0001:2;
+x=a*sin(w*t);
+plot(t,x)
+
+%t = 0:.0001:.0625;
+%x = square(4*pi*30*t); 
+%plot(t,x)

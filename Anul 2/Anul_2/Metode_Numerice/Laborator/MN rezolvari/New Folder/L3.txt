@@ -1,0 +1,77 @@
+Laborator 3
+Interpolare liniara
+n=10;
+
+x=[1 2 3 4 5 6 7 8 9 10];
+y=[9 8  5 8 4 6 2 3 5 1];
+
+z=[1.25 5.63 9.8 4.24 7.31];
+
+     for i=1:5
+     for j=1:n
+     if z(i)>x(j)&z(i)<x(j+1) 
+        
+      s(i)=y(j)+((z(i)-x(j))/(x(j+1)-x(j))*(y(j+1)-y(j)));
+        
+      end
+      end
+     
+  end
+
+Interpolare spline
+n=10;
+m=50;
+x=[1 2 3 4 5 6 7 8 9 10];
+y=[9 8 5 8 4 6 2 3 5 1];
+
+k=2;
+
+for i=1:n
+    if(i>1)
+        p1=(y(i)-y(i-1))/(x(i)-x(i-1))
+    else
+        p1=(y(i+1)-y(i))/(x(i+1)-x(i)) 
+    end
+
+    if(i<n)
+        p2=(y(i+1)-y(i))/(x(i+1)-x(i)) 
+    else
+        p2=(y(i)-y(i-1))/(x(i)-x(i-1)) 
+    end
+
+alfa1=atan(p1);
+alfa2=atan(p2);
+alfa=(alfa1+alfa2)/2;
+
+xd(i)=k*cos(alfa);
+yd(i)=k*sin(alfa);
+
+end
+
+for i=1:n-1
+    ax=-2*x(i+1)+xd(i+1)+xd(i)+2*x(i);
+    bx=3*x(i+1)-xd(i+1)-2*x(i)-3*x(i);
+    cx=xd(i);
+    dx=x(i);
+    
+    ay=-2*y(i+1)+yd(i+1)+yd(i)+2*y(i);
+    by=3*y(i+1)-yd(i+1)-2*y(i)-3*y(i);
+    cy=yd(i);
+    dy=y(i);
+    
+    for j=1:50
+        t=j/50;
+        
+        xt(j)=ax*t^3+bx*t^2 +cx*t+dx;
+        yt(j)=ay*t^3+by*t^2 +cy*t+dx;
+    end
+    
+end
+
+Prin fisier functie
+x=[1 2 3 4 5 6 7 8 9 10]
+y=[9 8 5 8 4 5 2 3 5 1]
+xx=[1.25 5.63 9.8 4.24 7.31]
+d=splin(x, y)
+yy=interp(xx, x, y, d)
+plot(x, y)

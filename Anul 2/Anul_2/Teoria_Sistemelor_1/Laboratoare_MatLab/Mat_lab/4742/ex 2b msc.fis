@@ -1,0 +1,57 @@
+[System]
+Name='ex 2b msc'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=15
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='e'
+Range=[-1 1]
+NumMFs=5
+MF1='NM':'trimf',[-1.25 -1 -0.75]
+MF2='Nm':'trimf',[-0.75 -0.5 -0.25]
+MF3='Pm':'trimf',[0.25 0.5 0.75]
+MF4='Ze':'trimf',[-0.25 0 0.25]
+MF5='PM':'trimf',[0.75 1 1.25]
+
+[Input2]
+Name='de'
+Range=[-1 1]
+NumMFs=3
+MF1='Ne':'trimf',[-1 -0.5 0]
+MF2='Ze':'trimf',[-0.5 0 0.5]
+MF3='Po':'trimf',[0 0.5 1]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=5
+MF1='-1':'constant',[-1]
+MF2='-0.5':'constant',[-0.5]
+MF3='0':'constant',[0]
+MF4='0.5':'constant',[0.5]
+MF5='1':'constant',[1]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 2 (1) : 1
+2 1, 2 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+4 1, 3 (1) : 1
+4 2, 3 (1) : 1
+4 3, 3 (1) : 1
+3 1, 3 (1) : 1
+3 2, 4 (1) : 1
+3 3, 4 (1) : 1
+5 1, 4 (1) : 1
+5 2, 5 (1) : 1
+5 3, 5 (1) : 1

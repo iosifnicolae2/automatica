@@ -1,0 +1,48 @@
+Laborator 1
+ a=0.05;
+    b=2;
+    eps=0.000001;
+if (((log( a ) + a)*(log( b ) + b))>0)
+c=0;
+else
+   while (b-a)>eps
+        c=(a+b)/2;
+    
+        if ((log+a)*(log(c)+c))>0 a=c; 
+        else b=c;
+         end
+        end
+1. Metoda înjumatatirii intervalului
+
+	Cea mai simpla metoda de rezolvare a ecuatiilor neliniare este metoda înjumatatirii intervalului. 
+Aceasta metoda se aplica daca pe intervalul dat exista în mod sigur o singura radacina. Daca [a,b] este 
+intervalul pe care se studiaza problema, atunci conditia de mai sus se poate scrie: f(a) • f(b) < 0. Se
+ calculeaza punctul c de la mijlocul intervalului si se determina în care din cele doua jumatati se afla 
+radacina. Astfel, daca f(a) • f(c) < 0, radacina se afla în intervalul [a,c], iar în caz contrar în 
+intervalul [b,c]. Se aplica acelasi procedeu pentru noul interval de mai multe ori pâna când se obtine 
+un interval în jurul radacinii mai mic decât o eroare admisa ?.
+
+	Algoritmul descris mai sus se poate scrie astfel:
+1.	Se declara functia f(x).
+2.	Se declara marginile intervalului a si b si eroarea ?.
+3.	Daca f(a) • f(b) > 0 atunci intervalul este ales gresit. STOP.
+4.	Se calculeaza c = ( a + b ) / 2.
+5.	Daca f(c) = 0 atunci radacina exacta este c. Se scrie c. STOP.
+6.	Daca f(a) • f(c) > 0 atunci a = c altfel b = c. 
+7.	Daca ( b - a ) < ? atunci se scrie radacina aproximativa c = ( a + b ) / 2 si se opresc calculele, altfel se reia întreg procesul de la pasul 4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

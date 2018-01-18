@@ -1,0 +1,4 @@
+num=[10];
+den=[1 11 10 0];
+[mag,phase,w]=bode(num,den)
+margin(num,den)

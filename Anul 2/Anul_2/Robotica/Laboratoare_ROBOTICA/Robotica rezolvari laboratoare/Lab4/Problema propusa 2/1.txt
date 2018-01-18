@@ -1,0 +1,6 @@
+[S,SD,SDD] = lspb(S0, SF, M) este o traiectorie scalara (Mx1) care variaza
+	de la S0 la SF in M pasi folosind un segment constant care reprezinta viteza 
+	si o parabola. Viteza si acceleratia pot fi optionale fiind returnate de 
+	SD (Mx1) si SDD (Mx1).
+
+mtraj - Traiectorie multipla de axe dintre 2 puncte	

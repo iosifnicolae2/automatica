@@ -1,0 +1,5 @@
+ Z=eul2r(1,1,1)
+Y=rpy2r(1,1,1)
+unghiuri_e=tr2eul(Z)
+unghiuri_c=tr2rpy(Y)
+B=se2(0,0,0)

@@ -1,0 +1,296 @@
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "MUX.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\MUX\MUX_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Cristi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING MUX_profile.inc ****
+.STMLIB ".\mux.stl" 
+
+**** RESUMING MUX.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 16 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MUX
+.EXTERNAL OUTPUT F2
+U_x1         STIM(1,0) $G_DPWR $G_DGND N15544 IO_STM STIMULUS=x1
+U_x2         STIM(1,0) $G_DPWR $G_DGND N15548 IO_STM STIMULUS=x2
+U_x3         STIM(1,0) $G_DPWR $G_DGND N15552 IO_STM STIMULUS=x3
+U_x4         STIM(1,0) $G_DPWR $G_DGND N15556 IO_STM STIMULUS=x4
+X_U1         0 N15552 N15548 N15544 N15556 N15556 0 N15556 N18809 N18872 N18809
++  0 F2 M_UN0001 $G_DPWR $G_DGND 74LS151 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         N15556 N18809 $G_DPWR $G_DGND 74LS04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N18872 IO_STM STIMULUS=Vcc
+
+**** RESUMING MUX.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U1.ULS151LOG:IN12 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U1.ULS151LOG:IN7 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U1.ULS151LOG:IN1 from analog node 0 to new digital node 0$AtoD3
+X$0_AtoD3
++ 0
++ 0$AtoD3
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+* C:\Users\Cristi\Desktop\LAB ASCN 1\MUX-PSpiceFiles\SCHEMATIC1\MUX\mux.stl written on Thu Jun 01 09:30:05 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x1 Digital x2 Digital x3 Digital x4 Digital Vcc Digital a Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 70s
+;!Yrange 0 2
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS x4 STIM (1, 1) ;! CLOCKP 2 1 0 0
++   +0s 0
++   +1s 1
++   Repeat Forever
++      +1s 0
++      +1s 1
++   EndRepeat
+.STIMULUS x3 STIM (1, 1) ;! CLOCKP 4 2 0 0
++   +0s 0
++   +2s 1
++   Repeat Forever
++      +2s 0
++      +2s 1
++   EndRepeat
+.STIMULUS x2 STIM (1, 1) ;! CLOCKP 8 4 0 0
++   +0s 0
++   +4s 1
++   Repeat Forever
++      +4s 0
++      +4s 1
++   EndRepeat
+.STIMULUS x1 STIM (1, 1) ;! CLOCKP 16 8 0 0
++   +0s 0
++   +8s 1
++   Repeat Forever
++      +8s 0
++      +8s 1
++   EndRepeat
+.STIMULUS a SIN( 1 1 1 0 0 0 )
+.STIMULUS Vcc STIM (1, 1)
++   +0s 0
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74LS          
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI    2            
+       S0VLO     .8          
+      S1NAME 0               
+       S1VHI     .8          
+       S1VLO   -1.5          
+      S2NAME R               
+       S2VHI    1.2          
+       S2VLO     .8          
+      S3NAME R               
+       S3VHI    2            
+       S3VLO    1.1          
+      S4NAME X               
+       S4VHI    2            
+       S4VLO     .8          
+      S5NAME 1               
+       S5VHI    7            
+       S5VLO    2            
+      S6NAME F               
+       S6VHI    2            
+       S6VLO    1.1          
+      S7NAME F               
+       S7VHI    1.2          
+       S7VLO     .8          
+
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_LS04          
+      TPLHMN    0               3.600000E-09 
+      TPLHTY    0               9.000000E-09 
+      TPLHMX    0              15.000000E-09 
+      TPHLMN    0               4.000000E-09 
+      TPHLTY    0              10.000000E-09 
+      TPHLMX    0              15.000000E-09 
+
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_LS           
+        DRVL    0             157            
+        DRVH    0             108            
+       AtoD1                 AtoD_LS         
+       AtoD2                 AtoD_LS_NX      
+       AtoD3                 AtoD_LS         
+       AtoD4                 AtoD_LS_NX      
+       DtoA1 DtoA_STM        DtoA_LS         
+       DtoA2 DtoA_STM        DtoA_LS         
+       DtoA3 DtoA_STM        DtoA_LS         
+       DtoA4 DtoA_STM        DtoA_LS         
+      TSWHL1                    2.724000E-09 
+      TSWHL2                    2.724000E-09 
+      TSWHL3                    2.724000E-09 
+      TSWHL4                    2.724000E-09 
+      TSWLH1                    2.104000E-09 
+      TSWLH2                    2.104000E-09 
+      TSWLH3                    2.104000E-09 
+      TSWLH4                    2.104000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                   
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  N15552) : 0     ( X_U1.D5) : 0     (  N15544) : 0     ( X_U1.D6) : 1         
+
+( X_U1.D3) : 0     (  X_U1.Y) : 0     (  N18872) : 0     ( 0$AtoD3) : 0         
+
+(  X_U1.C) : 0     (  N15556) : 0     (  N15548) : 0     (M_UN0001) : 1         
+
+( X_U1.D7) : 0     (X_U1.GBAR) : 0    ( X_U1.D0) : 0     (  0$AtoD) : 0         
+
+(  N18809) : 1     ( X_U1.D4) : 1     ( X_U1.D1) : 0     ( X_U1.D2) : 0         
+
+(  X_U1.W) : 1     (  X_U1.A) : 0     ( 0$AtoD2) : 0     (      F2) : 0         
+
+(  X_U1.B) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X$DIGIFPWR.VDPWR  -5.000E-06
+    X$DIGIFPWR.VDGND  -6.800E-04
+
+    TOTAL POWER DISSIPATION   2.50E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/01/17 09:35:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-MUX"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\mux-pspicefiles\schematic1\mux.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

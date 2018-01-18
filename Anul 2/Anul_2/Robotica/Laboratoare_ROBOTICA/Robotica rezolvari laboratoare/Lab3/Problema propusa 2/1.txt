@@ -1,0 +1,13 @@
+rotx(THETA)
+
+	 - este o matrice rotativa reprezentand o rotatie de unghiul theta in jurul axei x,se exprima in radian;
+	
+trplot	
+	 - realizeaza o reprezentare grafica 3D;
+
+pause
+ 	- asteapta confirmarea utilizatorului;
+
+tranimate 
+
+	- animeaza o rotatie sau mai multe in functie de un punct sau de o axa.

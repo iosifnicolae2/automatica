@@ -1,0 +1,19 @@
+tpoly - genereaza o traiectorie polinomiala, scalara;
+	este o functie de interpolare;
+        [S,SD,SDD] = tpoly(S0, SF, M)
+            s=pozitie 
+            sd=viteza
+            sdd=acceleratie
+            s0=pct initial
+            sf=pct final
+            m-pas
+
+subplot - creaza mai multe grafice intr-o singura fereastra;
+	  ex: subplot(3,2,1)
+		3- numarul de grafice pe linie;
+		2- numarul de grafice pe coloana;
+		1- ordinea de afisare a graficelor;
+plot - genereaza un grafic linie, prin unirea a 2 puncte in 2D;
+	ex:  	x=[1 2];
+		y=[3 4];
+		plot(x,y)

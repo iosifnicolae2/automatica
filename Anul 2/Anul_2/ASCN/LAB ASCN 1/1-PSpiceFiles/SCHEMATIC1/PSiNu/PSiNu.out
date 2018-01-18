@@ -1,0 +1,178 @@
+
+**** 05/30/17 19:11:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSiNu"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PSiNu.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu\PSiNu_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Cristi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING PSiNu_profile.inc ****
+.STMLIB ".\PSiNu.stl" 
+
+**** RESUMING PSiNu.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 1
+.EXTERNAL INPUT F1
+X_U1A         N15765 N15765 N14845 $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         N15769 N15769 N14849 $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1C         N15780 N15780 N14853 $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1D         N15761 N15761 N14841 $G_DPWR $G_DGND 74LS00 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5A         N14697 N14797 N14817 M_UN0001 $G_DPWR $G_DGND 74LS10 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5B         N14841 N14849 N14853 N14697 $G_DPWR $G_DGND 74LS10 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5C         N14841 N15765 M_UN0002 N14797 $G_DPWR $G_DGND 74LS10 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6A         N15761 N14845 N14849 N15780 N14817 $G_DPWR $G_DGND 74LS20 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_x2         STIM(1,0) $G_DPWR $G_DGND N15765 IO_STM STIMULUS=x2
+U_x1         STIM(1,0) $G_DPWR $G_DGND N15761 IO_STM STIMULUS=x1
+U_x4         STIM(1,0) $G_DPWR $G_DGND N15780 IO_STM STIMULUS=x4
+U_x3         STIM(1,0) $G_DPWR $G_DGND N15769 IO_STM STIMULUS=x3
+
+**** RESUMING PSiNu.cir ****
+.END
+
+* C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu\PSiNu.stl written on Tue May 30 19:10:22 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x1 Digital x2 Digital x3 Digital x4 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 140ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS x4 STIM (1, 1) ;! CLOCK 30 0.5 0 0
++   +0s 0
++   +16.66666666667ms 1
++   Repeat Forever
++      +16.66666666667ms 0
++      +16.66666666667ms 1
++   EndRepeat
+.STIMULUS x3 STIM (1, 1) ;! CLOCK 40 0.5 0 0
++   +0s 0
++   +12.5ms 1
++   Repeat Forever
++      +12.5ms 0
++      +12.5ms 1
++   EndRepeat
+.STIMULUS x2 STIM (1, 1) ;! CLOCK 45 0.5 0 0
++   +0s 0
++   +11.11111111111ms 1
++   Repeat Forever
++      +11.11111111111ms 0
++      +11.11111111111ms 1
++   EndRepeat
+.STIMULUS x1 STIM (1, 1) ;! CLOCK 50 0.5 0 0
++   +0s 0
++   +10ms 1
++   Repeat Forever
++      +10ms 0
++      +10ms 1
++   EndRepeat
+
+**** 05/30/17 19:11:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSiNu"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_LS00          D_LS10          D_LS20          
+      TPLHMN    3.600000E-09    3.600000E-09    3.600000E-09 
+      TPLHTY    9.000000E-09    9.000000E-09    9.000000E-09 
+      TPLHMX   15.000000E-09   15.000000E-09   15.000000E-09 
+      TPHLMN    4.000000E-09    4.000000E-09    4.000000E-09 
+      TPHLTY   10.000000E-09   10.000000E-09   10.000000E-09 
+      TPHLMX   15.000000E-09   15.000000E-09   15.000000E-09 
+
+
+**** 05/30/17 19:11:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSiNu"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_LS           
+        DRVL    0             157            
+        DRVH    0             108            
+       AtoD1                 AtoD_LS         
+       AtoD2                 AtoD_LS_NX      
+       AtoD3                 AtoD_LS         
+       AtoD4                 AtoD_LS_NX      
+       DtoA1 DtoA_STM        DtoA_LS         
+       DtoA2 DtoA_STM        DtoA_LS         
+       DtoA3 DtoA_STM        DtoA_LS         
+       DtoA4 DtoA_STM        DtoA_LS         
+      TSWHL1                    2.724000E-09 
+      TSWHL2                    2.724000E-09 
+      TSWHL3                    2.724000E-09 
+      TSWHL4                    2.724000E-09 
+      TSWLH1                    2.104000E-09 
+      TSWLH2                    2.104000E-09 
+      TSWLH3                    2.104000E-09 
+      TSWLH4                    2.104000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 05/30/17 19:11:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSiNu"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .03
+

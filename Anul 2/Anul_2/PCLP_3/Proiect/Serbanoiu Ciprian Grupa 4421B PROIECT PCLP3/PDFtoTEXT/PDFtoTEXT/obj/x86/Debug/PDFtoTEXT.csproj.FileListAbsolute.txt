@@ -1,0 +1,28 @@
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\PDFtoTEXT.exe
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\PDFtoTEXT.pdb
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.dll
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.xtra.dll
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.xml
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.exe
+C:\Users\Ciprian\Desktop\PROIECT C#\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.pdb
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.exe
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.pdb
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\PDFtoTEXT.exe
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\PDFtoTEXT.pdb
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.dll
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.xtra.dll
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\bin\Debug\itextsharp.xml
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ciprian\Desktop\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ciprian\Desktop\Cursuri\Anul II\Semestrul 1\PCLP\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.exe
+C:\Users\Ciprian\Desktop\Cursuri\Anul II\Semestrul 1\PCLP\Serbanoiu Ciprian Grupa 4421B PROIECT PCLP3\PDFtoTEXT\PDFtoTEXT\obj\x86\Debug\PDFtoTEXT.pdb

@@ -1,0 +1,12 @@
+t=[0:0.02:4];
+w=[0:0.01:3];
+num=[10];
+den1=[1 2 5];
+den2=[1 2 4];
+den=conv(den1,den2);
+b=step(num,den,t);
+subplot(3,1,1);
+plot(t,b);
+c=freqs(num,den,w);
+subplot(3,1,2);
+plot(w,abs(c));

@@ -1,0 +1,63 @@
+EX1.
+
+	t=[0:0.02:2];
+	w=5;
+	z=0.6;
+	num=[w^2];
+	den=[1 2*z*w w^2];
+	step(num, den, t);
+	impulse(num, den, t);
+	%u=t.*t/2;
+	u=sin(5*t);
+	lsim(num, den, u, t);
+	%(1.095-1= 0.095 = 9.5%)
+
+EX.2
+
+	t=[0:0.02:2];
+	num=[25*0.4 25];
+	den=[conv([0.16 1],[1 6 25])];
+	step(num, den, t);
+
+EX.3
+
+	t=[0:0.02:4]
+	Mv=0.4;
+	tv=0.8;
+	zita=abs(log(Mv))/sqrt(pi^2+log(Mv)^2);
+	w=pi/(tv*sqrt(1-zita^2));
+	d=w^2;
+	e=(2*zita*w-1)/d;
+	numg=[0 0 d];
+	deng=[1 1 0];
+	numh=[0 e 1];
+	denh=[0 0 1];
+	[numz,denz]=feedback(numg, deng, numh,denh,-1);
+	step(numz,denz,t);
+
+EX.4
+	e=[0.001:0.001:1];
+	m=exp(-(pi.*e)./sqrt(1.-e.^2));
+	plot(e,m);
+
+EX.5
+
+	t=[0:0.1:10];
+	num1=[0 6];
+	den1=[1 2];
+	num2=[0 2];
+	den2=[1 1];
+	[num,den]=parallel(num1,den1,num2,den2)
+	tf(num,den)
+	step(num,den,t) 
+
+EX.7
+
+	s1=[1 4 7 22 24];
+	s2=[1 0 4 20 24];
+	s3=[1 10 35 50 24];
+
+	routh(s1)
+	routh(s2)
+	routh(s3)
+

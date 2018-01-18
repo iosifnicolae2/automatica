@@ -1,0 +1,11 @@
+num1=[1 1];
+den1=[1 2];
+num2=1;
+den2=[1 1];
+[num,den]=series(num1,den1,num2,den2);
+GsHs=tf(num,den);
+num3=[1 5];
+den3=[1 3 5];
+[numt,dent]=feedback(num,den,num3,den3);
+Gt=tf(numt,dent);
+[A,B,C,D]=tf2ss(numt,dent);

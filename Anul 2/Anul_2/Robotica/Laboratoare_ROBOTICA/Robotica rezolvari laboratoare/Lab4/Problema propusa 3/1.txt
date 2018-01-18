@@ -1,0 +1,13 @@
+transl(X, Y, Z) 
+	- creeaza o translatie completa, dupa axele X, Y si Z.
+
+trinterp(T0, T1, S)
+	
+	- interpoleaza transformari omogene
+trotx (THETA)
+	
+- rotatie dupa axa x, cu unghiul theta.
+
+ctraj (T0, T1, N)
+
+	- traiectorie carteziana care porneste din punctul T0 , ajunge in T1 si trece prin N puncte.

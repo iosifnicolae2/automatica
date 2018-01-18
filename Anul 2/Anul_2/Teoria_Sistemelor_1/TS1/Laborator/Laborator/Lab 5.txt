@@ -1,0 +1,11 @@
+t=[0:0.02:2];
+w=5;
+z=0.6;
+num=[w^2];
+den=[1 2*z*w w^2];
+step(num, den, t);
+impulse(num, den, t);
+%u=t.*t/2;
+ u=sin(5*t);
+lsim(num, den, u, t);
+%(1.095-1= 0.095 = 9.5%)

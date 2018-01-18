@@ -1,0 +1,10 @@
+t=[0:0.02:4];
+w=[0:0.01:3];
+num=[0 0 0 10];
+den=[1 4.5 9 10];
+b=step(num,den,t);
+subplot(3,1,1);
+plot(t,b);
+c=freqs(num,den,w);
+subplot(3,1,2);
+plot(w,abs(c));

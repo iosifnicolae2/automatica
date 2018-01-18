@@ -1,0 +1,34 @@
+[System]
+Name='L1'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[-1 1]
+NumMFs=5
+MF1='z':'trimf',[-0.5 0 0.5]
+MF2='nm':'trimf',[-1 -0.5 0]
+MF3='pM':'trimf',[0.5 1 1]
+MF4='nM':'trimf',[-1 -1 -0.5]
+MF5='pm':'trimf',[0 0.5 1]
+
+[Output1]
+Name='output1'
+Range=[-1 1]
+NumMFs=5
+MF1='z':'trimf',[-0.5 0 0.5]
+MF2='nm':'trimf',[-1 -0.5 0]
+MF3='pM':'trimf',[0.5 1 1]
+MF4='nM':'trimf',[-1 -1 -0.5]
+MF5='pm':'trimf',[0 0.5 1]
+
+[Rules]

@@ -1,0 +1,10 @@
+1.Sa se scrie un program care sa genereze, pe baza unui fisier bitmap de intrare,
+trei fisiere bitmap, care prezinta separat cele trei componente de culoare.
+2.Sa se modifice programul de mai sus prin implementarea optiunii de eliminare 
+a elementelor negative din lista (optiunea 4).
+3.1. Modificati programele de mai sus pentru a afisa numarul de interschimbari efectuate.
+2. Realizati o comparatie între numarul de interschimbari realizate de fiecare algoritm prezentat 
+pentru un sir de numere sortat crescator.
+3. Realizati o comparatie între numarul de interschimbari realizate de fiecare algoritm 
+prezentat pentru un sir de numere sortat descrescator.
+4.Algoritm de rezolvare automata a unui labirint

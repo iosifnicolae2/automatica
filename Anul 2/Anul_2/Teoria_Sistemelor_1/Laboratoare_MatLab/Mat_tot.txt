@@ -1,0 +1,1505 @@
+%-- Unknown date --%
+kp=1
+Tr1=1
+Tr2=1
+Tsum=0.1
+Tff=0.01
+Tr2=10
+Tr1=10
+%-- 25.03.2013 13:28 --%
+%-- 26.03.2013 09:40 --%
+simulink
+kp=1
+Te=0.5
+kp=2
+Te=1
+T1= 1.5
+%-- 26.03.2013 10:29 --%
+simulink\
+simulink
+T1=2
+T2=3
+Te=1
+kp=1.5
+%-- 26.03.2013 13:21 --%
+simulink
+num=conv([0.1 1],[3 1]);
+den=[1.2];
+kr=T1/2*kp
+kr=T1/2*kp*Te;
+T1=1;
+kr=T1/2*kp*Te;
+kp=1;
+kr=T1/2*kp*Te;
+Te=1;
+kr=T1/2*kp*Te;
+T=1;
+kp=5;
+T=5;
+kp=10;
+T=10;
+T1=1;
+Te=1;
+kp=1;
+kr=T1/2*kp*Te;
+Gr=(T1*kr kr)/T1;
+Te=10;
+T1=1;
+Te=1;
+%-- 26.03.2013 14:58 --%
+simulink
+%-- 27.03.2013 07:48 --%
+functief(1)
+functieg(1,1)
+clc
+clear
+clcl
+functieg(1,1)
+functieg(1,2)
+clc
+dd
+%-- 27.03.2013 09:31 --%
+functief
+%-- 27.03.2013 09:49 --%
+functif(2)
+functief(2)
+functieg(2)
+fg(1,2)
+%-- 27.03.2013 10:10 --%
+functief(2)
+functieg(2)
+functieg(2,3)
+plot(y)
+plot(si)
+%-- 27.03.2013 11:28 --%
+simulink
+num=1
+den=[1 1]
+x=2
+functief(2)
+functief(-2)
+functieg(1,-2)
+c=[1,-2]
+clc
+functieg(1,-2)
+clear
+clc
+wn=5
+z=0.6
+from workspace
+plot(t,y)
+plot(y)
+plot(y,t)
+clear
+clc
+plot(y)
+plot(t,y)
+%-- 02.04.2013 14:54 --%
+open('D:\Studenti\Bocioaca\IRA Lab3\ex_1.mdl')
+%-- 03.04.2013 07:58 --%
+%-- 03.04.2013 09:28 --%
+clc
+%-- 03.04.2013 10:28 --%
+open('C:\Documents and Settings\student\Desktop\untitled.mdl')
+%-- 03.04.2013 10:29 --%
+open('C:\Documents and Settings\student\Desktop\untitled.mdl')
+%-- 03.04.2013 16:39 --%
+simulink
+%-- 14.05.2013 09:22 --%
+%-- 14.05.2013 13:14 --%
+simulink
+%-- 15.05.2013 07:33 --%
+clear
+clc
+u
+clc
+clear
+clc
+num=3;
+den=7;
+tf(num,den)
+den=[1 1];
+tf(num,den)
+clear
+clc
+%-- 22.05.2013 07:25 --%
+help cloop
+help feedback
+clear
+clc
+clear
+a=4
+b=32
+clc
+clear
+clc
+%-- 22.05.2013 09:12 --%
+%-- 22.05.2013 13:02 --%
+%-- 28.05.2013 15:40 --%
+simulink
+kp=2
+Te=10
+Te=1
+ke=10
+ke=20
+Te=3
+Te=0.5
+ke=25
+%-- 29.05.2013 09:21 --%
+%-- 29.05.2013 12:49 --%
+%-- 03.06.2013 10:22 --%
+clear
+%-- 04.06.2013 09:46 --%
+%-- 04.06.2013 11:54 --%
+simulink
+%-- 04.06.2013 14:11 --%
+%-- 04.06.2013 18:58 --%
+simulink
+conv ([1 0.1],[1 10])
+kr=10/(2*0.5*0*1)
+kr=10/(2*0.5*0.1)
+kr=0.1/(2*0.5*10)
+%-- 14.06.2013 10:46 --%
+dopen('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+simulink
+%-- 17.06.2013 09:24 --%
+clc
+N
+wn
+clc
+N
+wn
+%-- 20.11.2013 15:15 --%
+clear
+clc
+simulink
+fuzzy
+%-- 20.11.2013 18:07 --%
+fuzzy
+%-- 27.11.2013 18:12 --%
+%-- 04.12.2013 15:09 --%
+Fuzzy
+simulink
+La=2.5*0.001
+Ra=1.5
+ke=0.5
+J=0.15*0.001
+D=0.2*0.0001
+J.s=0.15*0.001
+La.s=2.5*0.001
+clear
+La.s=2.5*0.001
+Ra=1.5
+km=0.5
+ke=0.5
+Ja.s=0.15*0.001
+D=0.2*0.0001
+La=2.05*0.001
+La=2.5*0.001
+Ra=1.5
+km=0.5
+ke=0.5
+%-- 08.01.2014 16:49 --%
+open('D:\Studenti\Bocioaca\IRA Lab3\ex_1.mdl')
+%-- 20.01.2014 08:14 --%
+b=2
+bm=3
+am=4
+a=4
+b=10
+%-- 20.01.2014 09:34 --%
+tf help
+help tf
+x
+y
+help errortf
+f(2)
+clc
+plot(x)
+clc
+x=[0:0.01:pi]
+plot(x,f(x))
+clc
+x=[0:0.1:pi];
+plot(x,f(x))
+cos(3)
+x=2
+f(2)
+plot(f(2))
+x=[0:0.1:pi]
+plot(x,f(x))
+clc
+f(2)
+plot(f(2))
+f(x)
+f(3)
+x=[0:0.1:pi];
+plot(x,f(x))
+f(x)
+f(2)
+clc
+f([0:0.01:pi])
+%-- 03.03.2014 07:25 --%
+simulink
+t
+y
+plot(t,y)
+a=300;
+clc
+clear
+f(2)
+f
+f(4)
+f(2)
+g(2,1)
+f(2)
+clc
+clear
+n
+plot(t,n)
+clc
+clear
+t[0:10]
+plot(t,n)
+%-- 03.03.2014 09:19 --%
+t
+y
+plot(t,y)
+a=5
+help function
+%-- 03.03.2014 11:03 --%
+simulink
+clc
+clear
+simulnikl
+simulink
+t
+y
+plot(t,y)
+clc
+clear
+y
+clc
+clear
+y
+plot(t,y)
+clc
+clear
+plot(t,y)
+clc
+clear
+plot(t,y)
+plot(y,t)
+clc
+clear
+functieg(1,-2)
+functief(-2)
+clc
+clear
+simulink
+%-- 05.03.2014 15:24 --%
+k = 1
+on = 50
+z = 0.7
+k = 1
+zita = 0.7
+wn = 20
+kr = 2
+kr = 3
+kr = 4
+kr = 10
+kr = 100
+%-- 06.03.2014 13:05 --%
+simout
+%-- 06.03.2014 13:41 --%
+open('D:\Studenti\4413\Horia Si Mihai\IRA_Lab1\exemplul5.mdl')
+%-- 06.03.2014 13:50 --%
+open('F:\ira colocviu\colocviu.mdl')
+%-- 06.03.2014 15:02 --%
+simulink
+%-- 07.03.2014 13:00 --%
+simulink
+k=1
+on-50
+on=50
+z=0.7
+k=1
+zita= 0.7
+wn=20
+kr=3
+kr=2
+Ti=0.5
+T=1
+%-- 10.03.2014 07:40 --%
+%-- 10.03.2014 09:24 --%
+simulink
+functief(2)
+functieg(1,-2)
+plot(y)
+plot(y,t)
+plot(t,y)
+clc
+clear
+plot(t,y)
+clear
+clc
+plot(t,y)
+%-- 10.03.2014 11:08 --%
+help polynomial
+clc
+clear
+help function
+clear
+clc
+functief(2)
+functief(0)
+functief(-1)
+functief(5)
+functief(-4)
+functieg(1,1)
+functieg(1,3)
+clear
+functieg(3,3)
+clear
+functieg(3,3)
+help function
+clear
+clc\
+clc
+help function
+functief(5)
+functief(-3)
+functieg(3,3)
+functieg(1,2)
+functieg(5,5)
+functieg(1,1)
+functieg(0,2)
+clc
+num=25
+den=[1 3 3]
+num=[9]
+den=[1 3 3]
+plot(t,y)
+t
+y
+plot(t,y)
+%-- 12.03.2014 11:14 --%
+simulink
+k=10
+k=50
+k=0.01
+k=0.1
+k=50
+k=0.1
+k=0.00001
+k=100
+ti=4
+ti=10
+k=10
+ti=0.1
+k=0.01
+k=1
+ti=1
+k=1
+k=50
+ti=10
+td=5
+%-- 13.03.2014 12:52 --%
+SIMULINK
+k = 1
+k = 5
+k = 10
+k = 100
+k = 0.5
+k = 0.1
+k = 0.01
+k = 0.5
+k = 10
+k = 50
+k = 5
+k = 8
+k = 10
+k = 8
+k=2
+k = 1
+k = 100
+k = 5
+k = 100
+k = 10000\
+%-- 13.03.2014 13:43 --%
+simulink
+k = 500
+k = 10
+k = 120
+k = 10
+k = 1
+k = 10
+k = 1
+Ti = 5
+k = 50
+k = 10
+Ti = 50
+k = 50
+Ti = 5
+%-- 13.03.2014 14:54 --%
+simulink
+k=1
+k=5
+k=10
+k=1
+k=5
+k=50
+k=100
+k=0.5
+k=0.1
+k=0.01
+k=5
+k=10
+k=50
+k=100
+Ti=1
+k=5
+k=10
+k=50
+k=100
+k=10
+Ti=5
+Ti=10
+Ti=50
+Ti=100
+Ti=5
+k=10
+Td=5
+%-- 14.03.2014 07:57 --%
+clc
+%-- 14.03.2014 09:26 --%
+help square
+clc
+help square
+clc
+CLC
+clc
+help square
+clear
+clc
+%-- 14.03.2014 11:37 --%
+help ifft
+clc
+help square
+clc
+help square
+help stem
+%-- 17.03.2014 09:40 --%
+clc
+%-- 17.03.2014 11:05 --%
+simulink\
+simulink
+%-- 17.03.2014 12:01 --%
+a
+g
+clc
+clear
+help step
+clc
+clear
+help roots
+clc
+help abs
+%-- 17.03.2014 12:24 --%
+%-- 17.03.2014 12:46 --%
+%-- 21.03.2014 07:54 --%
+load LabEx2_semnal1.mat
+plot(t,x)
+t=0:Te:3;
+plot(t,x)
+clc
+clear
+load LabEx2_semnal1.mat
+plot(t,x)
+clear
+clc
+clea
+clear
+clc
+clear
+xx=ifft(X)
+xx=ifft(X);
+plot(t,xx)
+felp square
+help square
+help plot
+%-- 21.03.2014 09:32 --%
+clc
+%-- 21.03.2014 11:29 --%
+run('C:\MATLAB7\work\Lab1_ex02.m')
+load lab1_semnal1.mt
+load lab1_semnal1.mat\
+load lab1_semnal1.mat
+plot
+plot(t,x)
+clear
+clc
+plot(t,x)
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+help square
+clc
+clear
+help fft
+clc
+clear
+help square
+clc
+clear
+clc
+clear
+t
+x
+clc
+clear
+%-- 24.03.2014 08:53 --%
+%-- 24.03.2014 09:32 --%
+simulink
+clc
+clear
+clc
+simulink
+%-- 24.03.2014 11:29 --%
+simulink
+clear
+%-- 24.03.2014 11:31 --%
+help routh
+help rooth
+help routh
+clc
+help roots
+help subplot
+help bode
+help logspace
+help bode
+%-- 24.03.2014 12:36 --%
+%-- 26.03.2014 11:18 --%
+simulink
+kp=0.1
+T=10
+kr=1/(2*kp*T)
+kp=10
+T=0.1
+kr=1/(2*kp*T)
+kp=10
+T=Ti=0.1
+T=0.1
+Ti=T
+kp=10
+T=0.1
+T1=1
+T1=Ti
+kr=Ti/(2*kp*T)
+kp=10
+T1=0.1
+T2=0.2
+Tr1=T1
+Tr2=T2
+kr=1/(2*T*kp)
+%-- 26.03.2014 15:53 --%
+simulink
+%-- 27.03.2014 14:32 --%
+%-- 28.03.2014 08:03 --%
+clc
+help prod
+clc
+help tf2zp
+%-- 28.03.2014 09:49 --%
+clc
+clear
+clc
+%-- 28.03.2014 11:15 --%
+clc
+clear
+clc
+help zp2tf
+%-- 31.03.2014 07:25 --%
+%-- 31.03.2014 07:47 --%
+0.
+clc
+help logspace
+help rlocfind
+sisotool
+n=[1];
+d=[1 2 0];
+subplot(2,2,1)
+bode(n,d)
+margin(n,d);
+subplot(2,2,2)
+rlocus(n,d)
+d1=conv([1 2 0],[1 4]);
+subplot(2,2,3)
+bode(n,d1)
+margin(n,d1);
+subplot(2,2,4)
+rlocus(n,d1)
+n=[1];
+d=[1 2 0];
+subplot(2,2,1)
+bode(n,d)
+margin(n,d);
+subplot(2,2,2)
+rlocus(n,d)
+d1=conv([1 2 0],[1 4]);
+subplot(2,2,3)
+bode(n,d1)
+margin(n,d1);
+subplot(2,2,4)
+rlocus(n,d1)
+g=tf(n,d1)
+simulink
+sisotool
+%-- 31.03.2014 09:39 --%
+sisotools
+sisotool
+simulink
+clc
+clear
+clc
+s+5
+clc
+num=[1 3.6  0 0]
+denum=[1 5]
+g=denum/num
+g[]=denum/num
+clc
+sistool
+sisotool
+clear
+clc
+g=tf(denum,num)
+num
+clc
+num=[1 3.6  0 0]
+denum=[1 5]
+g=tf(denum,num)
+sisotool
+clear
+clc
+denum=[(s+2)(s+4)]
+denum=[(s+2)(s+4)clc
+clc
+clear
+denum=[1 6 8]
+num=[1 3.6 0 0]
+g=tf(denum, num)
+sisotool
+denumf=[0]
+numf=[1 8 19 12]
+f=tf(denumf, numf)
+denumf=[1]
+f=tf(denumf, numf)
+denumh=[1]
+numh=[1 10 16 1]
+h=tf(denumh, numh)
+numhh=[1 10 16 1+j]
+%-- 31.03.2014 10:15 --%
+h=tf(denumh, numh)
+denumh=[1]
+numhh=[1 10 16 1+j]
+h=tf(denumh, numh)
+numh=[1 10 16 1]
+h=tf(denumh, numh)
+simulink
+sisotool
+clc
+bode
+%-- 31.03.2014 11:04 --%
+sisotool
+help logspace
+logspace(-1,2)
+clc
+clear
+SISOTOOL
+clc
+clear
+sisotool
+g=tf([1],[1 2 0])
+simulink
+sisotool
+simulink
+sisotool
+sismulink
+simulink
+sisostool
+sisotool
+clc
+clear
+g=tf([4 1],[6 1])
+sisotool
+%-- 03.04.2014 14:56 --%
+simulink
+%-- 04.04.2014 07:32 --%
+clc
+clear
+help tf2zp
+clear
+clc
+help zp2tf
+%-- 04.04.2014 08:15 --%
+%-- 04.04.2014 09:13 --%
+%-- 04.04.2014 09:15 --%
+%-- 04.04.2014 09:27 --%
+clc
+plot(w,Gw)
+%-- 04.04.2014 09:31 --%
+w
+v
+z
+clc
+%-- 04.04.2014 11:20 --%
+helo bode
+help bode
+hello bianca
+help bode
+%-- 04.04.2014 11:28 --%
+clc
+clear
+help prod
+help zp2tf
+help tf2zp
+help bode
+%-- 07.04.2014 07:49 --%
+sisotool
+g=tf([1 5],[1 3.6 0 0])
+k
+plot(r)
+k
+p
+G=tf([1],[1 2 0]);
+sisotool
+clc
+ala bala portocala
+tra lalalalal
+tralalalalala lalalalalalala
+%-- 07.04.2014 09:46 --%
+clc
+clear
+clc
+clear
+G=tf([1],[1 2 0])
+sisotool
+clc
+clear
+G=tf([8 1],[4 1])
+sisotool
+simulink
+sisotool
+simulink
+sisotool
+%-- 07.04.2014 11:36 --%
+clear
+clc
+sisotool
+g=tf([1],[1 2 0])
+sisotool
+%-- 09.04.2014 12:00 --%
+simulink
+%-- 10.04.2014 13:17 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+%-- 11.04.2014 08:37 --%
+%-- 11.04.2014 09:31 --%
+help butter
+help buttord
+help cheby1
+%-- 11.04.2014 12:01 --%
+%-- 14.04.2014 07:58 --%
+help ss2tf
+help syms
+clc
+help lsim
+help blockbuilt
+help blkbulit
+help blkbulid
+help blkbuild
+help connect
+help blkbuild
+clear
+clc
+CLC
+CLEAR
+clear
+clc
+%-- 14.04.2014 09:42 --%
+clc
+help syms
+clc
+clear
+clc
+clc\
+clc
+lc
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+%-- 14.04.2014 11:31 --%
+clc
+help syms
+help inv
+help linsolve
+clc
+help blkbuild
+help nblocks
+clc
+clear
+help blkbuild
+blkbuild
+help blkbuild
+%-- 15.04.2014 15:07 --%
+dlsim help
+help dlsim
+clc
+help sstf
+help ss2tf
+help c2dm
+clc
+CLC
+clc
+%-- 16.04.2014 15:39 --%
+PULA = 30
+CLEAR
+CLC
+CLR
+clr
+clc
+clr
+clc
+clear
+clc
+%-- 17.04.2014 11:32 --%
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+%-- 18.04.2014 07:50 --%
+help cwebashev
+help cebashev
+help cheb1ord
+clc
+clear
+help cheb1
+help cheby1
+help chab2ord
+help chab1ord
+help chab
+help cheb2ord
+help cheby2
+help ellipord
+help cheby2
+%-- 18.04.2014 09:30 --%
+help cheby2\
+clc
+help help
+clc
+help butter
+help cheby1ord
+help cheb1ord
+helpcheby1
+help cheby1
+help ben10
+help suntem
+help victorie dinamo
+help creier_steaua
+help creier_zizu
+clc
+help cheby
+clc
+help cheby1
+clc
+%-- 18.04.2014 11:29 --%
+help chab2ord
+%-- 18.04.2014 11:39 --%
+help ellipord
+%-- 18.04.2014 11:45 --%
+help ellipbord
+help ellipord
+%-- 28.04.2014 07:43 --%
+A
+B
+n
+d
+f
+clc
+help nlkbuild
+help blkbuild
+clc
+%-- 28.04.2014 10:03 --%
+%-- 28.04.2014 11:13 --%
+clc
+clear
+clc
+clc]
+clc
+help expm
+clc\
+clc
+%-- 05.05.2014 08:00 --%
+sistem_continuu([0:3],1,1,3)
+clc
+clear
+sistem_continuu([0:10],1,1,3)
+sistem_continuu([0:10],1,1,0)
+simulink
+A=[-40];
+B=[20];
+C=[1];
+D=[0];
+%-- 05.05.2014 08:12 --%
+SIMULINK
+simulink
+help figure
+%-- 05.05.2014 09:00 --%
+%-- 05.05.2014 09:19 --%
+clc\
+clc
+clear
+sistemcontinuu(1,1,1,1)
+clc
+sistemcontinu(1,1,1,1)
+help sfunction
+help s-function
+sistemcontinuu([0:0.1:10],1,1,1)
+sistemcontinu([0:0.1:10],1,1,1)
+clear
+clc
+sistemcontinu([0:0.1:10],1,1,1)
+test([0:0.1:10],1,1,1)
+test([0:0.1:10],1,1,3)
+test([0:0.1:10],1,1,0)
+test(1,1,1,0)
+test(1,1,1,1)
+a=[0 1;-6 -11];
+% b=[1;1];
+% c=[1 1];
+b=[1;1];
+c=[1 1]
+d=[0]
+a=[0 1;-6 -11]
+b=[1;1]
+c=[1 1]
+%-- 05.05.2014 11:11 --%
+simulink
+clc
+clear
+simulink
+cclc
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+%-- 09.05.2014 07:30 --%
+/cassylab
+/open cassilab
+/open cassulab
+/open cassylab
+cassylab
+synth
+/help synth
+%-- 09.05.2014 07:51 --%
+helpcheb1ord
+%-- 09.05.2014 09:41 --%
+help cheb1ord
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+clear
+clc
+cleaer
+clear
+clc
+help ellipord
+%-- 09.05.2014 12:01 --%
+%-- 12.05.2014 09:33 --%
+help bode
+%-- 12.05.2014 13:03 --%
+help Signal Processing Toolbox
+clc]
+clc
+help cheb1ord
+help Signal Processing Toolbox
+help buttord
+%-- 14.05.2014 11:30 --%
+simulink
+%-- 14.05.2014 15:51 --%
+%-- 16.05.2014 11:33 --%
+clc
+%-- 19.05.2014 07:23 --%
+simulink
+%-- 19.05.2014 09:26 --%
+open('C:\Documents and Settings\student\Desktop\4422\sim1.mdl')
+%-- 19.05.2014 10:28 --%
+%-- 19.05.2014 11:36 --%
+clc
+help subplot
+clc
+lc
+clc
+%-- 21.05.2014 11:37 --%
+simulink
+%-- 21.05.2014 15:42 --%
+%-- 22.05.2014 12:51 --%
+simulink
+%-- 22.05.2014 14:59 --%
+simulink
+i = [1 0, 0 1]
+i = [1 0; 0 1]
+c = .01
+Ra = 1
+La = .5
+J = .01
+A = [0 c/J; -c/La -Ra/La]
+b = [0; 1/La]
+det(a)
+det(A)
+k1 = 0.01
+k2 = 1
+Kt = [k1 k2]
+Kr = 1/(c*inv(b*Kt-A)*b)
+Kr=2
+PLACE
+help place
+p = [-5 -i; -5  i]
+p = [-5 -j; -5  +j]
+p = [-5-j; -5+j]
+a
+A
+b
+place(A, b, p)
+Kt = place(A, b, p)
+%-- 22.05.2014 15:57 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+%-- 23.05.2014 09:02 --%
+clc\
+%-- 23.05.2014 09:51 --%
+%-- 23.05.2014 11:13 --%
+%-- 23.05.2014 11:34 --%
+clear
+clc
+%-- 26.05.2014 07:27 --%
+simulink
+plot(t,y)
+sistem_cont([0:10],2,1,3)
+sistem_cont([0:10],1,1,3)
+simulink
+sistem_cont([0:10],1,1,3)
+sistem_cont([0:10],2,1,3)
+sistem_cont([0:10],1,1,3)
+simulink
+clc
+sistem_cont([0:10],1,1,3)
+%-- 26.05.2014 09:22 --%
+help rlocus
+clc
+help conv
+clc
+help tf2ss
+clc
+help tf
+clc
+%-- 26.05.2014 11:12 --%
+clear
+clc
+%-- 28.05.2014 15:46 --%
+Ra=1
+La=0.5
+c=0.001
+j=0.001
+J=0.001
+C=0.01
+c=0.01
+j=0.01
+J=0.01
+Kr=1
+%-- 30.05.2014 07:46 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+clc
+%-- 30.05.2014 09:51 --%
+clear
+load  semnal4.mat;
+plot (x, 'DisplayName', 'x', 'YDataSource', 'x'); figure(gcf)
+%-- 30.05.2014 10:12 --%
+load('C:\Documents and Settings\student\Desktop\pscool\semnal1.mat')
+%-- 30.05.2014 10:50 --%
+%-- 30.05.2014 11:08 --%
+load('C:\Documents and Settings\student\Desktop\PS\semnal4.mat')
+%-- 30.05.2014 11:31 --%
+clc
+load semnal4.mat
+t=0:0.01:5;
+N =length(x);
+fe = 1/Te;
+X = fft(x);
+Xabs = abs(X)/(N/2);
+magX = Xabs(1,1:N/2+1);
+f = [0:N/2]*fe/N;
+plot(t,magX)
+t=0:0.01:5;
+N =length(x);
+fe = 1/Te;
+X = fft(x);
+Xabs = abs(X)/(N/2);
+magX = Xabs(1,1:N/2+1);
+f = [0:N/2]*fe/N;
+plot(t,magX)
+load semnal4.mat
+t=0:0.01:5;
+N =length(x);
+fe = 1/Te;
+X = fft(x);
+Xabs = abs(X)/(N/2);
+magX = Xabs(1,1:N/2+1);
+f = [0:N/2]*fe/N;
+%plot(t,magX)
+steam(f,magX)
+%-- 02.06.2014 07:34 --%
+help freqs
+help rlocus
+num
+den
+clc
+A=[-1 -1;6.5 0];
+B=[1 1;1 0];
+C=[1 0;0 1];
+D=[0 0;0 0];
+help blkbuild
+clc
+A=[-1 -1;6.5 0];
+B=[1 1;1 0];
+C=[1 0;0 1];
+D=[0 0;0 0];
+%-- 02.06.2014 09:41 --%
+simulink
+%-- 02.06.2014 11:14 --%
+u
+%-- 02.06.2014 11:24 --%
+open('C:\MATLAB7\budeanu\ex2.mdl')
+clc
+clear
+t
+a=[0 -0.25;1 1];
+b=[1;1];
+c=[0 1];
+d=0;
+[num,den]=ss2tf(a,b,c,d)
+[m,p,w]=bode(num,den);
+[r,k]=rlocus(num,den);
+t=freqs(num,den,w);
+subplot(2,1,1)
+plot(w,abs(t))
+subplot(2,1,2)
+rlocus(num,den,k);
+clc
+clear
+a=[-1 -1;6.5 0;];
+b=[1 1;1 0];
+c=[1 0;0 1];
+d=[0 0];
+step(a,b,c,d)
+a=[-1 -1;6.5 0;];
+b=[1 1;1 0];
+c=[1 0;0 1];
+d=[0];
+step(a,b,c,d)
+clc
+clear
+a=[-1 -1;6.5 0;];
+b=[1 1;1 0];
+c=[1 0;0 1];
+d=[0;0];
+step(a,b,c,d)
+clc
+clear
+a=[-1 -1;6.5 0;];
+b=[1 1;1 0];
+c=[1 0;0 1];
+d=[0];
+step(a,b,c,d)
+%-- 02.06.2014 11:38 --%
+open('C:\MATLAB7\budeanu\ex4.mdl')
+%-- 02.06.2014 11:40 --%
+open('C:\MATLAB7\budeanu\ex2.mdl')
+%-- 02.06.2014 11:41 --%
+open('C:\MATLAB7\budeanu\ex2.mdl')
+%-- 02.06.2014 11:48 --%
+open('C:\MATLAB7\budeanu\ex2.mdl')
+%-- 02.06.2014 11:50 --%
+open('C:\MATLAB7\budeanu\ex4.mdl')
+%-- 02.06.2014 11:51 --%
+%-- 04.06.2014 14:55 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+cls
+clear
+%-- 04.06.2014 14:58 --%
+%-- 04.06.2014 15:05 --%
+kr=0.5;
+kr=5;
+kr=0.5;
+kr=1;
+kr=6;
+kr=10;
+kr=20;
+kr=50;
+kr=5;
+kr=50;
+kr=10;
+kr=20;
+kr=15;
+kr=13;
+kr=14;
+kr=14.5;
+kr=14;
+kr=13.8;
+kr=50;
+%-- 04.06.2014 16:50 --%
+simulink
+%-- 04.06.2014 16:51 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+%-- 04.06.2014 17:30 --%
+open('D:\Studenti\Bocioaca\IRA Lab3\ex_1.mdl')
+%-- 04.06.2014 17:31 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\colocviu.mdl')
+%-- 04.06.2014 17:32 --%
+open('C:\Documents and Settings\student\Desktop\ira colocviu\ira4.mdl')
+%-- 05.06.2014 11:17 --%
+%-- 05.06.2014 13:18 --%
+%-- 06.06.2014 08:18 --%
+clc
+clear
+%-- 06.06.2014 09:24 --%
+clc
+%-- 06.06.2014 10:11 --%
+clc
+%-- 06.06.2014 11:06 --%
+%-- 06.06.2014 11:35 --%
+cler
+clc
+clear
+%-- 03.09.2014 13:10 --%
+%-- 03.09.2014 14:10 --%
+help pzmap
+Cloop
+help cloop
+clc
+help printsys
+%-- 03.09.2014 14:38 --%
+%-- 03.09.2014 14:54 --%
+simulink
+%-- 09.09.2014 13:26 --%
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\ex2.m')
+uiopen('D:\TS2\roots\Pregatire Colocviu\biletul2\ex2s.slx',1)
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\ex3.m')
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\ex4.m')
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\ex5.m')
+uiopen('D:\TS2\roots\Pregatire Colocviu\biletul2\ex5s.slx',1)
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\sistem_continuu.m')
+run('D:\TS2\roots\Pregatire Colocviu\biletul2\ex1.m')
+help rlocus
+help conv
+simulink
+%-- 09.09.2014 13:37 --%
+simulink
+help ss2tf
+help tf
+help simulink
+simulink
+help tf
+help blkbuild
+help tf
+clc
+%-- 09.09.2014 14:04 --%
+simulink
+%-- 09.09.2014 14:17 --%
+%-- 20.10.2014 16:57 --%
+fuzzy
+%-- 23.10.2014 07:41 --%
+ex1
+ex171
+ex1
+functie1(1,3)
+f(1,-3)
+functie1(1,-3)
+functie1(-3,1)
+functie1(-4,-1)
+help any
+X=[1 0 2; 0 0 1; 0 0 4]
+any(x,1)
+clc
+help any
+any(x)
+all(x)
+clc
+any(x)~=0
+clc
+any~=0
+clc
+if(any(x))
+clc
+end
+clc
+any(x)
+any(X)
+clc
+clear
+ex3
+any(~X)\
+any(~X)
+any(~X)=0
+any(X)=0
+any(X~)=0
+any(X)~=0
+clc
+all(X)
+help find
+find(X>-1)
+elements of A that are greater than 100.  I
+[C]=find(X>-1)
+[R,C]=find(X>-1)
+clc
+if(any(X))
+X
+end
+clc
+any(X)>-1
+any(X>-1)
+all(X>-1)
+clc
+ex3
+any(X)
+clear
+clc
+ex3
+ex4
+ex4b
+help len
+help length
+clc
+ex5
+clear
+clc
+ex5
+%-- 27.10.2014 16:48 --%
+fuzzy
+%-- 27.10.2014 17:46 --%
+uiopen('C:\MATLAB7\work\Untitled.fis',1)
+run('C:\MATLAB7\work\Untitled.m')
+uiopen('C:\MATLAB7\work\Untitled.fis',1)
+fuzzy
+%-- 30.10.2014 07:42 --%
+A=[1 2;3 4]
+b=[1 3 5 7]
+B=[1 3 5 7]
+C=[1;4;9]
+A(2,1)
+B(4)
+C(3)
+functie1(1,3)
+functie1(1,-3)
+X=[1,0,2;0,0,1;0,0,4]
+for i:3
+for i:1:9
+if x[i]=0
+disp(i)
+for i:1:3
+any(x[1,3])
+any(X[1,3])
+any(X)
+all(X)
+any(X>-1)
+Suma
+Suma(1)
+Suma(100)
+Suma(1)
+suma
+Suma(100)
+s=0
+Suma(100)
+Suma(1)
+suma(100)
+suma(10)
+Suma1(1)
+Suma1(100)
+Suma1(1)
+suma2(1)
+suma2(1)\
+suma2(1)
+%-- 03.11.2014 16:43 --%
+fuzzy\
+fuzzy
+%-- 03.11.2014 17:52 --%
+FUZZY
+FUZZY101
+FUZZY
+fuzzy
+%-- 06.11.2014 07:31 --%
+A=[3 2 -1; -1 3 2; 1 -1 -1]
+B=[10;5;-1]
+A'
+X=B/A
+A*X=B
+c=conv(f,g)
+%-- 10.11.2014 16:42 --%
+fuzzy
+%-- 13.11.2014 07:38 --%
+y=deconv(a,b)
+A[2,3]
+A=[2,3]
+A=[1,2,3;4,5,6;7,8,9]
+%-- 20.11.2014 07:27 --%
+t=[0:.001:.02];
+f=sin(2*pi*50*t);
+plot(t,f,'g-.' )
+g=f+0.2;
+plot(t,g,'r+')
+plot(t,f,' g-.',t,g,'r+')
+t=[0:0.01:2*pi];
+f=sin(2.*t)*cos(2.*t);
+f=sin(2.*t).*cos(2.*t);
+polar(f,t,'r+')
+polar(y,f,'r+')
+polar(t,f,'r+')
+load nnnn.mat
+%-- 20.11.2014 16:50 --%
+A/B
+X=A/B
+LAB21
+%-- 20.11.2014 17:04 --%
+c=conv(f,g)
+%-- 20.11.2014 17:20 --%
+%-- 20.11.2014 17:27 --%
+lab222
+%-- 20.11.2014 17:34 --%
+r
+g
+%-- 24.11.2014 16:37 --%
+simulink
+%-- 27.11.2014 07:35 --%

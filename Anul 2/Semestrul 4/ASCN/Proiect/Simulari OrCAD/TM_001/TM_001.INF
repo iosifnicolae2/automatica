@@ -1,0 +1,43 @@
+`F  1.00 TM_001
+`B "1" "1" "A" "      May  4, 2013" "" "" 
+"" ""
+""
+""
+""
+""
+`P I "X1"
+`P S "VCC"
+`P S "GND"
+`P I "X2"
+`P I "X3"
+`P I "X4"
+`P O "B"
+`E TTL.LIB
+`I R "74LS00" TTL.LIB "74LS00" CE4F7468  U1  [1111]
+"" "" "" "" "" "" "" ""  ""
+( "I0_A" "1" I ) ( "I0_B" "4" I ) ( "I0_C" "9" I ) ( "I0_D" "12" I ) 
+( "I1_A" "2" I ) ( "I1_B" "5" I ) ( "I1_C" "10" I ) ( "I1_D" "13" I ) ( "O_A" "3" O ) 
+( "O_B" "6" O ) ( "O_C" "8" O ) ( "O_D" "11" O ) ( "VCC" "14" S ) ( "GND" "7" S ) 
+`I R "74LS00" TTL.LIB "74LS00" CE4F746D  U2  [1100]
+"" "" "" "" "" "" "" ""  ""
+( "I0_A" "1" I ) ( "I0_B" "4" I ) ( "I0_C" "9" I ) ( "I0_D" "12" I ) 
+( "I1_A" "2" I ) ( "I1_B" "5" I ) ( "I1_C" "10" I ) ( "I1_D" "13" I ) ( "O_A" "3" O ) 
+( "O_B" "6" O ) ( "O_C" "8" O ) ( "O_D" "11" O ) ( "VCC" "14" S ) ( "GND" "7" S ) 
+`I R "74LS20" TTL.LIB "74LS20" CE4F746F  U3  [10]
+"" "" "" "" "" "" "" ""  ""
+( "I0_A" "1" I ) ( "I0_B" "9" I ) ( "I1_A" "2" I ) ( "I1_B" "10" I ) 
+( "I2_A" "4" I ) ( "I2_B" "12" I ) ( "I3_A" "5" I ) ( "I3_B" "13" I ) ( "O_A" "6" O ) 
+( "O_B" "8" O ) ( "VCC" "14" S ) ( "GND" "7" S ) 
+`J ( P I "X1" ) ( R U1 1 I ) ( R U1 2 I ) ( R U1 13 I ) 
+`J ( R U3 14 S ) ( R U2 14 S ) ( R U1 14 S ) ( P S "VCC" ) 
+`J ( R U1 3 O ) ( R U1 5 I ) 
+`J ( R U3 7 S ) ( R U2 7 S ) ( R U1 7 S ) ( P S "GND" ) 
+`J ( P I "X2" ) ( R U2 4 I ) ( R U2 5 I ) ( R U1 10 I ) 
+`J ( R U2 6 O ) ( R U2 2 I ) 
+`J ( P I "X3" ) ( R U1 12 I ) ( R U2 1 I ) 
+`J ( P I "X4" ) ( R U1 4 I ) ( R U1 9 I ) 
+`J ( R U1 6 O ) ( R U3 5 I ) 
+`J ( R U1 8 O ) ( R U3 4 I ) 
+`J ( R U1 11 O ) ( R U3 2 I ) 
+`J ( R U2 3 O ) ( R U3 1 I ) 
+`J ( P O "B" ) ( R U3 6 O ) 

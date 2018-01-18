@@ -1,0 +1,397 @@
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "SAUNU.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\SAUNU\SAUNU_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Cristi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING SAUNU_profile.inc ****
+.STMLIB ".\SAUNU.stl" 
+
+**** RESUMING SAUNU.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 46s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 2
+.EXTERNAL OUTPUT F1
+U_x1         STIM(1,0) $G_DPWR $G_DGND N17095 IO_STM STIMULUS=x1
+U_x2         STIM(1,0) $G_DPWR $G_DGND N17103 IO_STM STIMULUS=x2
+U_x3         STIM(1,0) $G_DPWR $G_DGND N17111 IO_STM STIMULUS=x3
+U_x4         STIM(1,0) $G_DPWR $G_DGND N17119 IO_STM STIMULUS=x4
+X_U1A         0 0 N17095 N17099 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         0 0 N17103 N17107 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         0 0 N17119 N17123 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2B         N17095 N17111 N17119 N17072 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2C         N17095 N17107 N17111 N17068 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3B         N17072 N17068 N17056 N17049 $G_DPWR $G_DGND 74HC27 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4A         0 0 0 N17049 F1 $G_DPWR $G_DGND 74HC4002 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4B         N17099 N17103 N17111 N17123 N17056 $G_DPWR $G_DGND 74HC4002
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING SAUNU.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U4A.U1:IN3 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U4A.U1:IN2 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U4A.U1:IN1 from analog node 0 to new digital node 0$AtoD3
+X$0_AtoD3
++ 0
++ 0$AtoD3
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U2A.U1:IN2 from analog node 0 to new digital node 0$AtoD4
+X$0_AtoD4
++ 0
++ 0$AtoD4
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U2A.U1:IN1 from analog node 0 to new digital node 0$AtoD5
+X$0_AtoD5
++ 0
++ 0$AtoD5
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U1B.U1:IN2 from analog node 0 to new digital node 0$AtoD6
+X$0_AtoD6
++ 0
++ 0$AtoD6
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U1B.U1:IN1 from analog node 0 to new digital node 0$AtoD7
+X$0_AtoD7
++ 0
++ 0$AtoD7
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U1A.U1:IN2 from analog node 0 to new digital node 0$AtoD8
+X$0_AtoD8
++ 0
++ 0$AtoD8
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U1A.U1:IN1 from analog node 0 to new digital node 0$AtoD9
+X$0_AtoD9
++ 0
++ 0$AtoD9
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+* C:\Users\Cristi\Desktop\LAB ASCN 1\2-PSpiceFiles\SCHEMATIC1\SAUNU\SAUNU.stl written on Wed May 31 14:09:29 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x1 Digital x2 Digital x3 Digital x4 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 70s
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS x4 STIM (1, 1) ;! CLOCKP 2 1 0 0
++   +0s 0
++   +1s 1
++   Repeat Forever
++      +1s 0
++      +1s 1
++   EndRepeat
+.STIMULUS x3 STIM (1, 1) ;! CLOCKP 4 2 0 0
++   +0s 0
++   +2s 1
++   Repeat Forever
++      +2s 0
++      +2s 1
++   EndRepeat
+.STIMULUS x2 STIM (1, 1) ;! CLOCKP 8 4 0 0
++   +0s 0
++   +4s 1
++   Repeat Forever
++      +4s 0
++      +4s 1
++   EndRepeat
+.STIMULUS x1 STIM (1, 1) ;! CLOCKP 16 8 0 0
++   +0s 0
++   +8s 1
++   Repeat Forever
++      +8s 0
++      +8s 1
++   EndRepeat
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74HC          
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .7          
+       S0VLO     .2          
+      S1NAME 0               
+       S1VHI     .2          
+       S1VLO    -.3          
+      S2NAME R               
+       S2VHI     .55         
+       S2VLO     .2          
+      S3NAME R               
+       S3VHI     .7          
+       S3VLO     .45         
+      S4NAME X               
+       S4VHI     .7          
+       S4VLO     .2          
+      S5NAME 1               
+       S5VHI    1.3          
+       S5VLO     .7          
+      S6NAME F               
+       S6VHI     .7          
+       S6VLO     .45         
+      S7NAME F               
+       S7VHI     .55         
+       S7VLO     .2          
+
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_HC27          D_HC4002        
+      TPLHMN    4.000000E-09    4.800000E-09 
+      TPLHTY   10.000000E-09   12.000000E-09 
+      TPLHMX   23.000000E-09   28.000000E-09 
+      TPHLMN    4.000000E-09    4.800000E-09 
+      TPHLTY   10.000000E-09   12.000000E-09 
+      TPHLMX   23.000000E-09   28.000000E-09 
+
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_HC           
+        INLD                    3.500000E-12 
+        DRVL    0              87            
+        DRVH    0              87            
+       AtoD1                 AtoD_HC         
+       AtoD2                 AtoD_HC_NX      
+       AtoD3                 AtoD_HC         
+       AtoD4                 AtoD_HC_NX      
+       DtoA1 DtoA_STM        DtoA_HC         
+       DtoA2 DtoA_STM        DtoA_HC         
+       DtoA3 DtoA_STM        DtoA_HC_E       
+       DtoA4 DtoA_STM        DtoA_HC_E       
+      TSWHL1                    2.742000E-09 
+      TSWHL2                    2.742000E-09 
+      TSWHL3                    2.751000E-09 
+      TSWHL4                    2.751000E-09 
+      TSWLH1                    2.758000E-09 
+      TSWLH2                    2.758000E-09 
+      TSWLH3                    2.763000E-09 
+      TSWLH4                    2.763000E-09 
+       TPWRT  100.000000E+03    2.000000E-09 
+
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+
+(X$0_AtoD1.NORM)    0.0000            (X$0_AtoD2.NORM)    0.0000                
+
+(X$0_AtoD3.NORM)    0.0000            (X$0_AtoD4.NORM)    0.0000                
+
+(X$0_AtoD5.NORM)    0.0000            (X$0_AtoD6.NORM)    0.0000                
+
+(X$0_AtoD7.NORM)    0.0000            (X$0_AtoD8.NORM)    0.0000                
+
+(X$0_AtoD9.NORM)    0.0000            
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  N17107) : 1     (  N17049) : 0     ( 0$AtoD8) : 0     ( 0$AtoD5) : 0         
+
+(  N17072) : 1     ( 0$AtoD6) : 0     ( 0$AtoD3) : 0     (  N17111) : 0         
+
+(  N17095) : 0     ( 0$AtoD9) : 0     (  N17123) : 1     (  N17068) : 0         
+
+(  0$AtoD) : 0     ( 0$AtoD7) : 0     (  N17099) : 1     (      F1) : 1         
+
+(  N17056) : 0     (  N17103) : 0     (  N17119) : 0     ( 0$AtoD4) : 0         
+
+( 0$AtoD2) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X$DIGIFPWR.VDPWR  -4.991E-06
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.50E-05  WATTS
+
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     SIMULATION ERRORS
+
+
+******************************************************************************
+
+
+
+
+DIGITAL Message ID#1 (WARNING):
+GLITCH Hazard at time 16.0000000102s
+  Device: X_U4B.U1
+  NODEs: N17099 (IN1),
+         N17103 (IN2),
+         N17111 (IN3),
+         N17123 (IN4) => N17056 (OUT1)  
+  Pulse width is  1.020E-08
+ Noise Margin (tpwrt) is  2.000E-09
+ Propagation Delay is  1.220E-08
+
+
+DIGITAL Message ID#2 (WARNING):
+GLITCH Hazard at time 32.0000000102s
+  Device: X_U4B.U1
+  NODEs: N17099 (IN1),
+         N17103 (IN2),
+         N17111 (IN3),
+         N17123 (IN4) => N17056 (OUT1)  
+  Pulse width is  1.020E-08
+ Noise Margin (tpwrt) is  2.000E-09
+ Propagation Delay is  1.220E-08
+
+
+
+          JOB CONCLUDED
+
+**** 06/01/17 09:34:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SAUNU"  [ C:\Users\Cristi\Desktop\LAB ASCN 1\2-pspicefiles\schematic1\saunu.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

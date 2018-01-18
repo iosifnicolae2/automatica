@@ -1,0 +1,39 @@
+[System]
+Name='l2sper'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=15
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='eroare'
+Range=[-1 1]
+NumMFs=5
+MF1='negmare':'trapmf',[-1 -1 -0.1 -0.05]
+MF2='negmic':'trimf',[-0.1 -0.05 0]
+MF3='zero':'trimf',[-0.05 0 0.05]
+MF4='pozmic':'trimf',[0 0.05 0.1]
+MF5='pozmare':'trimf',[0.05 0.1 1 1]
+
+[Output1]
+Name='output1'
+Range=[-1 1]
+NumMFs=5
+MF1='negmare':'trimf',[-1 -1 -0.5]
+MF2='negmic':'trimf',[-1 -0.5 0]
+MF3='zero':'trimf',[-0.5 0 0.5]
+MF4='pozmic':'trimf',[0 0.5 1]
+MF5='pozmare':'trimf',[0.5 1 1]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
+4, 4 (1) : 1
+5, 5 (1) : 1

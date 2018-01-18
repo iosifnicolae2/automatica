@@ -1,0 +1,8 @@
+w=0:0.1:10;
+nr=[20 100];
+num=[1 14 100];
+%k = 1/5;
+%[z,p]=tf2zp(nr,num);
+%[num,den] = zp2tf(z,p,k);
+Gw=bode(num,den,w);
+plot(w,Gw);

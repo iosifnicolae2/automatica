@@ -1,0 +1,11 @@
+se2(X, Y, THETA) 
+	- reprezinta translatie dupa axele X si Y si rotatie data de valoarea lui THETA.
+
+figure 
+	- prin aceasta functie se creeaza o figura de obiecte grafice;
+
+trplot2 
+	- deseneaza un sistem de coordonate 2D reprezentat de se2;
+
+plot_point 	
+	- afiseaza un punct pe grafic.

@@ -1,0 +1,25 @@
+Laborator 5
+a=0;
+b=2*%pi;
+y(1)=0;
+n=50;
+h=(b-a)/n;
+for i=1:n
+    t(i)=a+i*h;
+    k1=cos(t(i));
+    k2=cos(t(i)+h/2);
+    k3=cos(t(i)+h/2);
+    k4=cos(t(i)+h);
+    y(i+1)=y(i)+h/6*(k1+2*k2+2*k3+k4);
+  
+end
+
+Function
+
+function y=f(x)
+    y=sin(x)+2*x-1;
+endfunction
+[sol]=fsolve(0.3,f,0.00001);
+
+
+

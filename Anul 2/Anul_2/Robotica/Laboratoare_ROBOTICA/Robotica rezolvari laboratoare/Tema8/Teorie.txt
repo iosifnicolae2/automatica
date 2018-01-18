@@ -1,0 +1,59 @@
+L(1)=Link([tetha,d,a,alpha,sigma])
+
+	- sunt inregistrate toate informatiile pentru o bucata (un brat) al robotului.
+	- acestea sunt: punctul de origine, dimensiunile(inaltime =d, lungime =a),
+		unghiul de rotatie =alpha, iar sigma= 0 pentru miscare de rotatie
+			sau 1 pentru miscare de translatie (prismatic).
+
+two_link=SerialLink(L,'name','john')
+
+	- cu aceasta comanda sunt inglobate toate "link-urile", formand in intregime robotul.
+
+two_link.fkine([a,b])
+
+	-pentru cinematica directa
+	-calculeaza cinematica pentru fiecare articulatie .
+
+two_link.plot([a,b])
+
+	-reprezinta grafic robotul ,iar directiile bratelor sunt date de a si b .
+
+mdl_puma560 
+
+	- definirea obiectului robot.
+
+q1=p560.ikine6s(P,'run');
+
+	-cinematica inversa pentru 6 miscari de rotatie. (pentru robotul puma 560)
+
+T=transl(x,y,z)
+
+	- translatie completa in 3D, dupa axele X,Y si Z.
+
+rpy2tr(x,y,z)
+
+	- rotatie completa dupa axele X,Y si Z. 
+
+trotx(x)
+
+	- rotatie dupa axa X.
+
+figure;qplot(t,q); title 'Pozitiile';
+
+	-figure creeaza figura;
+	-qplot(t,q) repezentare grafica a traiectoriei unghiului articular Q in functie de timp, t. 
+
+Ts=ctraj(T1,T2,length(t))
+
+	-taiectorie Carteziana care incepe de la punctul T1 (initial) , la T2, cu distanta dintre ele = length(t).
+
+[Q,QD,QDD] = jtraj(Q0, QF, M)
+
+	- este o traiectorie in spatiul articular Q unde coordonatele articulatie
+		variaza de la Q0 la QF . Timpul variaza de la 0 la 1 in M pasi.
+	- viteza si acceleratia articulara poate fi returnata ca QD si respectiv QDD.
+	- Traiectoriile Q,QD,QDD sunt matrici MxN.
+
+offset
+
+	-stabilizarea pozitiei de zero.

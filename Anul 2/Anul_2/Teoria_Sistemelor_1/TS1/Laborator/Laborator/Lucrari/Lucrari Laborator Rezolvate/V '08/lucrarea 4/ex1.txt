@@ -1,0 +1,93 @@
+ex1.
+t=[0:0.001:7];
+y=0.15;
+omegan=sqrt(2);
+zita1=3/(2*sqrt(2));
+fi1=acos(zita1);
+for i=1:length(t)
+yt1(i)=(y*exp(-zita1*omegan*t(i))*sin(omegan*sqrt(1-zita1^2)*t(i)+fi1))/sqrt(1-zita1^2);
+end
+plot(t,yt1)
+
+zita2=1/(2*sqrt(2));
+fi2=acos(zita2);
+for j=1:length(t)
+yt2(j)=(y*exp(-zita2*omegan*t(j))*sin(omegan*sqrt(1-zita2^2)*t(j)+fi2))/sqrt(1-zita2^2);
+end
+plot(t,yt2)
+
+
+ex2.
+numg=[6 0 1]
+deng=[1 3 3 1]
+tf (numg, deng)
+pzmap(numg, deng)
+
+h1=[1 1];
+h2=[1 2];
+h3=[1 2i];
+h4=[1 -2i];
+h5=[1 3];
+numh=conv(h1,h2);
+denh=conv(conv(h3,h4),h5);
+tf(numh,denh)
+pzmap(numh,denh)
+
+num=conv(numg,denh);
+den=conv(deng,numh);
+
+tf(num,den)
+pzmap(num,den)
+
+ex3.
+ng1=[1];
+dg1=[1 10];
+g1=tf(ng1, dg1)
+
+ng2=[1];
+dg2=[1 1];
+g2=tf(ng2,dg2)
+
+ng3=[1 0 1];
+dg3=[1 4 4];
+g3=tf(ng3,dg3)
+
+ng4=[1 1];
+dg4=[1 6];
+g4=tf(ng4,dg4)
+
+nh1=[1 1];
+dh1=[1 2];
+h1=tf(nh1,dh1)
+
+nh2=[2];
+dh2=[1];
+h2=tf(nh2,dh2)
+
+nh3=[1];
+dh3=[1];
+h3=tf(nh3,dh3)
+
+nh2=conv(nh2,dg4);
+dh2=conv(dh2,ng4);
+h2=tf(nh2,dh2)
+
+
+[ng34,dg34]=series(ng3,dg3,ng4,dg4);
+g34=tf(ng34,dg34)
+
+[ng34h1,dg34h1]=feedback(ng34,dg34,nh1,dh1,+1)
+g34h1=tf(ng34h1,dg34h1)
+
+
+[ng234h1,dg234h1]=series(ng2,dg2,ng34h1,dg34h1)
+g234h1=tf(ng234h1,dg234h1)
+
+[ng234h12,dg234h12]=feedback(nh2,dh2,ng234h1,dg234h1,-1)
+g234h12=tf(ng234h12,dg234h12)
+
+[ng1234h12,dg1234h12]=series(ng1,dg1,ng234h12,dg234h12)
+g1234h12=tf(ng1234h12,dg1234h12)
+
+[ng1234h123,dg1234h123]=feedback(ng1234h12,dg1234h12,nh3,dh3,-1)
+g1234h123=tf(ng1234h123,dg1234h123)

@@ -1,0 +1,14 @@
+t=0:0.2:2;
+w=0:0.2:8;
+num= 750;
+den=[1 36 205 750];
+pzmap(num, den);
+G=tf(num, den)
+M=freqs(num,den,w);
+R=roots(den)
+
+figure;
+subplot(4,1,1), step(G, t);
+subplot(4,1,2), plot(w, abs(M));
+%subplot(4,1,3), step(,t);
+%subplot(4,1,4), plot(w,);

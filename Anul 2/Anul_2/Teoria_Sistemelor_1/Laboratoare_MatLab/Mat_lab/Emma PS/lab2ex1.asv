@@ -1,0 +1,9 @@
+%wn2(s+2)*1/2
+%s2+2*z*wn*s+wn2   wn = 10   z = 0.7
+w=0:0.1:20;
+nr=[50 100];
+num=[1 14 100];
+k = 1/2;
+[nr,num]=zp2tf(z,p,k);
+Gw=bode(nr,num,w);
+plot(w,Gw);

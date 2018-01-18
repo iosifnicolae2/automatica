@@ -1,0 +1,10 @@
+w=[0:1:20];
+t=[0:0.01:8];
+num1=[1];
+den1=[1 1];
+num2=[1];
+den2=[3 1];
+a=freqs(num1,den1,w);
+b=freqs(num2,den2,w);
+subplot(2,3,1);
+subplot(w,abs(b));

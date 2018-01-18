@@ -1,0 +1,39 @@
+* C:\Users\Cristi\Desktop\LAB ASCN 1\1-PSpiceFiles\SCHEMATIC1\PSiNu\PSiNu.stl written on Tue May 30 19:10:22 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x1 Digital x2 Digital x3 Digital x4 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 140ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS x4 STIM (1, 1) ;! CLOCK 30 0.5 0 0
++   +0s 0
++   +16.66666666667ms 1
++   Repeat Forever
++      +16.66666666667ms 0
++      +16.66666666667ms 1
++   EndRepeat
+.STIMULUS x3 STIM (1, 1) ;! CLOCK 40 0.5 0 0
++   +0s 0
++   +12.5ms 1
++   Repeat Forever
++      +12.5ms 0
++      +12.5ms 1
++   EndRepeat
+.STIMULUS x2 STIM (1, 1) ;! CLOCK 45 0.5 0 0
++   +0s 0
++   +11.11111111111ms 1
++   Repeat Forever
++      +11.11111111111ms 0
++      +11.11111111111ms 1
++   EndRepeat
+.STIMULUS x1 STIM (1, 1) ;! CLOCK 50 0.5 0 0
++   +0s 0
++   +10ms 1
++   Repeat Forever
++      +10ms 0
++      +10ms 1
++   EndRepeat

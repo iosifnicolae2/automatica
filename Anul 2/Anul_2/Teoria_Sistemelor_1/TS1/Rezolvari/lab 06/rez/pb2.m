@@ -1,0 +1,11 @@
+w=[0:.01:3];
+t=[0:.02:4];
+num=[0 0 10];
+ec=[1 2 4];
+rad=roots(ec);
+rad=[rad; -2.5];
+den=poly(rad);
+subplot(2,1,1);
+step(num,den,t);
+subplot(2,1,2);
+plot(w,abs(freqs(num,den,w)));

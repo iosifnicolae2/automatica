@@ -1,0 +1,12 @@
+r=1;
+c=1;
+nei=[r*c 1]
+dei=[c 0]
+ei=tf(nei,dei)
+ne0=[1]
+de0=[c 0]
+e0=tf(ne0,de0)
+ng=conv(ne0,dei)
+dg=conv(de0,nei)
+g=tf(ng,dg)
+minreal(g)

@@ -1,0 +1,9 @@
+clear
+t=[0:0.001:7]
+y0=0.15
+w=sqrt(2)
+zit1=3/(2*sqrt(2))
+zit2=1/(2*sqrt(2))
+y1=y0/(sqrt(1-zit1^2)).*(exp(-zit1*w*t)).*sin(w*sqrt(1-zit1^2)*t+acos(zit1));
+y2=y0/(sqrt(1-zit2^2)).*(exp(-zit2*w*t)).*sin(w*sqrt(1-zit2^2)*t+acos(zit2));
+plot(t,y1,'m',t,y2,'g');

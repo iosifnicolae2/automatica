@@ -1,0 +1,10 @@
+wp1=600;
+wp2=1000;
+ws1=400;
+ws2=1400;
+Gp=0.891;
+Gs=0.1;
+GpdB=20*log10(Gp);
+GsdB=20*log10(Gs);
+[N,wn]=buttord([wp1,wp2],[ws1,ws2],GpdB,GsdB,'s');
+[n,d]=butter(N,wn,'bandpass','s');
